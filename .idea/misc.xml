@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Excite/AndroidStudioProjects/RadioFormula/app/src/main/res/layout/activity_main.xml" value="0.15898825654923215" />
+        <entry key="..\:/Users/Excite/AndroidStudioProjects/RadioFormula/app/src/main/res/drawable/default_background.xml" value="0.195" />
+        <entry key="..\:/Users/Excite/AndroidStudioProjects/RadioFormula/app/src/main/res/layout/activity_details.xml" value="0.1" />
+        <entry key="..\:/Users/Excite/AndroidStudioProjects/RadioFormula/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>

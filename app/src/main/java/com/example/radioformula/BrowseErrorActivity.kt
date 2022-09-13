@@ -68,7 +68,7 @@ class BrowseErrorActivity : FragmentActivity() {
 
     companion object {
         private val TIMER_DELAY = 3000L
-        private val SPINNER_WIDTH = 100
+        private val SPINNER_WIDTH = 200
         private val SPINNER_HEIGHT = 100
     }
 }

@@ -70,7 +70,7 @@ class MainFragment : BrowseSupportFragment() {
 
         mBackgroundManager = BackgroundManager.getInstance(activity)
         mBackgroundManager.attach(activity!!.window)
-        mDefaultBackground = ContextCompat.getDrawable(activity!!, R.drawable.default_background)
+        mDefaultBackground = ContextCompat.getDrawable(activity!!, R.drawable.ania)
         mMetrics = DisplayMetrics()
         activity!!.windowManager.defaultDisplay.getMetrics(mMetrics)
     }
@@ -110,8 +110,7 @@ class MainFragment : BrowseSupportFragment() {
         val mGridPresenter = GridItemPresenter()
         val gridRowAdapter = ArrayObjectAdapter(mGridPresenter)
         gridRowAdapter.add(resources.getString(R.string.grid_view))
-        gridRowAdapter.add(getString(R.string.error_fragment))
-        gridRowAdapter.add(resources.getString(R.string.personal_settings))
+
         rowsAdapter.add(ListRow(gridHeader, gridRowAdapter))
 
         adapter = rowsAdapter
@@ -146,12 +145,7 @@ class MainFragment : BrowseSupportFragment() {
                         .toBundle()
                 startActivity(intent, bundle)
             } else if (item is String) {
-                if (item.contains(getString(R.string.error_fragment))) {
-                    val intent = Intent(activity!!, BrowseErrorActivity::class.java)
-                    startActivity(intent)
-                } else {
-                    Toast.makeText(activity!!, item, Toast.LENGTH_SHORT).show()
-                }
+
             }
         }
     }
@@ -221,7 +215,7 @@ class MainFragment : BrowseSupportFragment() {
         private val BACKGROUND_UPDATE_DELAY = 300
         private val GRID_ITEM_WIDTH = 200
         private val GRID_ITEM_HEIGHT = 200
-        private val NUM_ROWS = 6
-        private val NUM_COLS = 15
+        private val NUM_ROWS = 1
+        private val NUM_COLS = 1
     }
 }

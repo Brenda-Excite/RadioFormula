@@ -18,8 +18,8 @@ data class Movie(
     override fun toString(): String {
         return "Movie{" +
                 "id=" + id +
-                ", title='" + title + '\'' +
-                ", videoUrl='" + videoUrl + '\'' +
+
+
                 ", backgroundImageUrl='" + backgroundImageUrl + '\'' +
                 ", cardImageUrl='" + cardImageUrl + '\'' +
                 '}'
